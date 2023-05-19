@@ -2,22 +2,24 @@
 <html lang="en">
 <head>
   <title>Pottery Idea Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Pottery Idea Generator</h1>
-    <div id="idea-container">
+    <h1 class="display-4 text-primary">Pottery Idea Generator</h1>
+    <div id="idea-container" class="mt-5">
       <h2>Idea:</h2>
       <div id="idea" role="region" aria-live="polite"></div>
-      <h2>Description:</h2>
+      <h2 class="mt-4">Description:</h2>
       <div id="description" role="region" aria-live="polite"></div>
-      <h2>Resources Needed:</h2>
+      <h2 class="mt-4">Resources Needed:</h2>
       <div id="resources" role="region" aria-live="polite"></div>
-      <button id="generate-btn" type="button">Generate Idea</button>
+      <button id="generate-btn" type="button" class="btn btn-secondary mt-4">Generate Idea</button>
     </div>
   </div>
 
-  <script src="scripts.js" async></script>
+  <script src="script.js" async></script>
 </body>
 </html>
